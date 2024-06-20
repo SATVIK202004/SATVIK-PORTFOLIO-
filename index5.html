@@ -57,34 +57,33 @@
     </div>
 
     <script>
-        
+        console.log("Script loaded");
+
         const quotes = [
-            "Self-belief and hard work will always earn you success- virat kohli",
-            "Your fear of failure can be your greatest motivator - virat kohli",
-            "A strong mindset is the key to success.- virat kohli",
-            
+            "Self-belief and hard work will always earn you success - Virat Kohli",
+            "Your fear of failure can be your greatest motivator - Virat Kohli",
+            "A strong mindset is the key to success. - Virat Kohli",
             "Your web portfolio is your digital handshake to the world.",
             "Design your portfolio like you design your future—thoughtfully, strategically, and with attention to every detail.",
             "A well-crafted portfolio isn't just about showcasing your work; it's about telling your story.",
-            
         ];
 
-        
         function rotateQuotes() {
+            console.log("Rotating quotes");
             const quoteElement = document.getElementById('quote');
             let index = 0;
 
             setInterval(() => {
+                console.log("Displaying quote:", quotes[index]);
                 quoteElement.innerHTML = quotes[index];
                 index = (index + 1) % quotes.length;
             }, 5000); 
         }
 
-        
         rotateQuotes();
 
-        
         setTimeout(() => {
+            console.log("Redirecting to index.html");
             window.location.href = 'index.html';
         }, 24000); 
     </script>
