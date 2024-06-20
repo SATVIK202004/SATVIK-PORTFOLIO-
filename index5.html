@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            color: #fff;
+            font-family: 'Simpletune', cursive;
+            font-size: 24px;
+            text-align: center;
+            animation: rainbow-background 10s ease infinite;
+        }
+        @keyframes rainbow-background {
+            0% { background: linear-gradient(135deg, #f06, #4a90e2); }
+            25% { background: linear-gradient(135deg, #4a90e2, #e24a7b); }
+            50% { background: linear-gradient(135deg, #e24a7b, #9c4ae2); }
+            75% { background: linear-gradient(135deg, #9c4ae2, #4ae296); }
+            100% { background: linear-gradient(135deg, #4ae296, #f06); }
+        }
+        .splash-content {
+            max-width: 80%;
+        }
+        .splash-content div {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .splash-content div:hover {
+            transform: scale(1.05);
+        }
+        .splash-content #welcome-message {
+            font-size: 36px;
+            color: #ff5722;
+        }
+        .splash-content #quote {
+            font-size: 24px;
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-content">
+        <div id="welcome-message">Welcome to My Portfolio!</div>
+        <div id="quote">Loading...</div>
+    </div>
+
+    <script>
+        
+        const quotes = [
+            "Self-belief and hard work will always earn you success- virat kohli",
+            "Your fear of failure can be your greatest motivator - virat kohli",
+            "A strong mindset is the key to success.- virat kohli",
+            
+            "Your web portfolio is your digital handshake to the world.",
+            "Design your portfolio like you design your future—thoughtfully, strategically, and with attention to every detail.",
+            "A well-crafted portfolio isn't just about showcasing your work; it's about telling your story.",
+            
+        ];
+
+        
+        function rotateQuotes() {
+            const quoteElement = document.getElementById('quote');
+            let index = 0;
+
+            setInterval(() => {
+                quoteElement.innerHTML = quotes[index];
+                index = (index + 1) % quotes.length;
+            }, 5000); 
+        }
+
+        
+        rotateQuotes();
+
+        
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 24000); 
+    </script>
+</body>
+</html>

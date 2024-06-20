@@ -1,0 +1,62 @@
+body {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gradientBackground 10s ease infinite;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86A8E7, #7F7FD5);
+    background-size: 800% 800%;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-size: 5em;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 20px;
+}
+
+p {
+    font-size: 2em;
+    margin: 20px;
+}
+
+.repo-btn {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+.repo-btn:hover {
+    background-color: #feb47b;
+}
+
+#weather, #back {
+    margin: 40px 0;
+}
