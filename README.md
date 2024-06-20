@@ -1,5 +1,5 @@
 # SATVIK-PORTFOLIO-
-alternate links for my portfolio 
+alternate url links for my portfolio to access
 
 
 
