@@ -7,8 +7,8 @@ https://satvikportfolio20.netlify.app/index.html
 
 
 
+https://satvik202004.github.io/SATVIK-PORTFOLIO-/
 
-https://satvik202004.github.io/SATVIK-PORTFOLIO-/index1.html
 
 
 
